@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Challengers Bangalore (RCB) Team Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 40px 20px; 
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+
+        section {
+            padding: 40px 20px; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .team-info, .schedule, .players, .poll, .news, .social {
+            margin-bottom: 40px;
+        }
+
+        .players {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .player-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .player-card img {
+            width: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .player-card h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .player-card p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .poll form {
+            background-color: #e9c46a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .poll button {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .poll button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .social a {
+            color: #ff0000;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social a:hover {
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .players {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Royal Challengers Bangalore (RCB)</h1>
+    <p>Welcome to the official RCB fan page! Catch all the latest news, schedules, and player updates!</p>
+</header>
+
+<nav>
+    <a href="#team-info">Team Info</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#players">Players</a>
+    <a href="#poll">Poll</a>
+    <a href="#news">News</a>
+    <a href="#social">Follow Us</a>
+</nav>
+
+<section id="team-info" class="team-info">
+    <h2>Team Information</h2>
+    <p>The Royal Challengers Bangalore (RCB) is one of the most popular teams in the Indian Premier League (IPL). Known for its star-studded lineup and powerful performances, RCB continues to captivate fans worldwide. Despite never winning the title, RCB is celebrated for its dedication, talent, and thrilling matches. Led by some of the best cricketers globally, RCB is a force to reckon with.</p>
+</section>
+
+<section id="schedule" class="schedule">
+    <h2>Match Schedule</h2>
+    <ul>
+        <li><strong>Match 1:</strong> RCB vs Mumbai Indians - Date: 3rd April, 2024 | Time: 7:30 PM | Venue: M. Chinnaswamy Stadium</li>
+        <li><strong>Match 2:</strong> RCB vs Chennai Super Kings - Date: 8th April, 2024 | Time: 7:30 PM | Venue: Wankhede Stadium</li>
+        <li><strong>Match 3:</strong> RCB vs Delhi Capitals - Date: 12th April, 2024 | Time: 7:00 PM | Venue: Arun Jaitley Stadium</li>
+    </ul>
+</section>
+
+<section id="players">
+    <h2>Player Profiles</h2>
+    <div class="container">
+    <div class="player-card">
+        <img src="virat kohli.webp" alt="Virat Kohli">
+        <h3>Virat Kohli</h3>
+        <p><strong>Position:</strong> Batsman</p>
+        <p><strong>Biography:</strong> Virat Kohli, a former captain of RCB, is one of the greatest batsmen in the world. With over 6000 runs in the IPL, his aggressive style and leadership make him a cornerstone of the team.</p>
+        <p><strong>Stats:</strong> Matches: 200+ | Runs: 6500+ | Avg: 38.00</p>
+    </div>
+
+    <div class="player-card">
+        <img src="faf du plessis.png" alt="Faf du Plessis">
+        <h3>Faf du Plessis</h3>
+        <p><strong>Position:</strong> Batsman (Captain)</p>
+        <p><strong>Biography:</strong> Faf du Plessis is the current captain of RCB. He is known for his calm demeanor and excellent cricketing mind. As an experienced player, he adds stability and power to the RCB lineup.</p>
+        <p><strong>Stats:</strong> Matches: 100+ | Runs: 3000+ | Avg: 35.00</p>
+    </div>
+
+    <div class="player-card">
+        <img src="glenn maxwell.webp" alt="Glenn Maxwell">
+        <h3>Glenn Maxwell</h3>
+        <p><strong>Position:</strong> All-Rounder</p>
+        <p><strong>Biography:</strong> Glenn Maxwell is an explosive all-rounder from Australia. He is known for his ability to change games with his power-hitting and handy off-spin bowling.</p>
+        <p><strong>Stats:</strong> Matches: 100+ | Runs: 2000+ | Wickets: 50+</p>
+    </div>
+
+    <div class="player-card">
+        <img src="mohammed siraj.webp" alt="Mohammed Siraj">
+        <h3>Mohammed Siraj</h3>
+        <p><strong>Position:</strong> Bowler</p>
+        <p><strong>Biography:</strong> Mohammed Siraj is a talented fast bowler known for his pace and accuracy. He has grown into one of RCB’s leading bowlers, often taking key wickets in crucial moments.</p>
+        <p><strong>Stats:</strong> Matches: 70+ | Wickets: 100+ | Economy: 7.5</p>
+    </div>
+    </div>
+</section>
+
+<section id="poll" class="poll">
+    <h2>Fan Poll</h2>
+    <form id="pollForm">
+        <p>Who do you think will score the most runs in the next match?</p>
+        <input type="radio" id="virat" name="vote" value="Virat Kohli">
+        <label for="virat">Virat Kohli</label><br>
+        <input type="radio" id="faf" name="vote" value="Faf du Plessis">
+        <label for="faf">Faf du Plessis</label><br><br>
+        <button type="submit">Submit Vote</button>
+    </form>
+    <p id="result"></p>
+</section>
+
+<section id="news" class="news">
+    <h2>Latest News</h2>
+    <ul>
+        <li><strong>News 1:</strong> Virat Kohli's fitness update ahead of the upcoming match against Mumbai Indians.</li>
+        <li><strong>News 2:</strong> RCB reveals a new strategy for facing Chennai Super Kings in their next game.</li>
+    </ul>
+</section>
+
+<section id="social" class="social">
+    <h2>Follow Us on Social Media</h2>
+    <p>Stay connected with us on social media for the latest updates!</p>
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+</section>
+
+<footer>
+    <p>&copy; 2024 Royal Challengers Bangalore. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('pollForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        let vote = document.querySelector('input[name="vote"]:checked').value;
+        document.getElementById('result').innerText = 'You voted for: ' + vote;
+    });
+</script>
+
+</body>
+</html>
